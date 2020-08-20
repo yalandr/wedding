@@ -1,0 +1,458 @@
+/*==== Pre-settings =======================================*/
+*{box-sizing: border-box; margin: 0; padding: 0; transition: opacity 300ms ease;}
+html {scroll-behavior: smooth;}
+body {font-family: sans-serif;}
+a,a:visited{text-decoration: none; color: inherit;}
+a:hover {text-decoration: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+ul li {list-style: none;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
+
+
+
+
+
+
+.d-flex {display: flex;}
+
+.center {text-align: center;}
+
+
+.header {
+	width: 100%;
+	height: 100vh;
+	background: url(../img/wedding-bg.webp) no-repeat;
+	background-size: cover;
+}
+
+.container {
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.header-content {
+	width: 100%;
+	height: 100%;
+	padding: 5rem 0 5rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.secondary-header {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+}
+
+.main-header {
+	font-family: 'Pacifico', cursive;
+	color: #FA90F4;
+	font-size: 6rem;
+}
+
+.date-link {
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #EA87E4;
+	border: 3px solid #fff;
+	padding: 1rem 3rem;
+	border-radius: 100px;
+	background: #fff;
+	transition: .3s;
+}
+
+.date-link:hover {
+	background: transparent;
+	color: #fff;
+}
+
+
+
+
+
+.introduction-section {
+	width: 100%;
+	padding: 8rem 0 6rem 0;
+}
+
+.left-column {
+	width: 50%;
+	padding: 0 2rem 5rem 3rem; 
+	text-align: right;
+}
+
+.left-column-header {
+	width: 100%;
+	height: auto;
+	justify-content: space-between;
+	padding: 0 0 3rem 4rem;
+}
+
+.column-heading {
+	text-transform: uppercase;
+	font-size: 3rem;
+	font-weight: 700;
+	color: #635C5C;
+}
+
+.column-sub-heading {
+	font-size: 1.6rem;
+	color: #F791F1;
+	font-family: century gothic;
+	font-weight: 500;
+}
+
+.text-grey {
+	color: #7A7A7A;
+	line-height: 1.8rem;
+}
+
+.right-column {
+	width: 50%;
+	padding: 0 3rem 5rem 2rem;
+}
+
+.right-column-header {
+	width: 100%;
+	justify-content: space-between;
+	padding: 0 4rem 3rem 0;
+}
+
+.big-face-picture {
+	width: 100%;
+	height: 20rem;
+	margin-top: 3rem;
+}
+
+.bride-picture {
+	background: url(../img/bride.JPG) no-repeat;
+	background-size: cover;
+}
+
+.groom-picture {
+	background: url(../img/groom.JPG) no-repeat;
+	background-size: cover;
+}
+
+
+
+
+
+.quote-section {
+	width: 100%;
+	height: auto;
+	background: url(../img/quote-bg.webp) no-repeat;
+	background-size: cover;
+}
+
+.quote-text {
+	color: #fff;
+	font-weight: 700;
+	font-size: 2.1rem;
+	font-family: century gothic;
+	letter-spacing: .1rem;
+	line-height: 2.8rem;
+	padding: 8rem 0 4rem 0;
+}
+
+.author-text {
+	font-family: 'Pacifico', cursive;
+	color: #F68EF0;
+	font-size: 2rem;
+	padding: 0 0 8rem 0;
+}
+
+
+
+.best-men-block {
+	width: 100%;
+	padding: 8rem 0 4rem 0;
+}
+
+.witnesses-heading {
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	color: #635C5C;
+	letter-spacing: .1rem;
+	margin: 1.3rem 0;
+}
+
+.witnesses-text {
+	font-family: century gothic;
+	font-weight: 700;
+	font-size: 1.4rem;
+	color: #8C788D;
+}
+
+.witnesses-pictures {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 4rem 0;
+}
+
+.witness-photo {
+	width: 12rem;
+	height: 12rem;
+	border-radius: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.best-men-1 {background: url(../img/bestman1.jpg) no-repeat center;}
+.best-men-2 {background: url(../img/bestman2.jpg) no-repeat center;}
+.best-men-3 {background: url(../img/bestman3.jpg) no-repeat center;}
+.best-men-4 {background: url(../img/bestman4.jpg) no-repeat center;}
+
+.bridesmaid-1 {background: url(../img/bridesmaid1.jpg) no-repeat center;}
+.bridesmaid-2 {background: url(../img/bridesmaid2.jpg) no-repeat center;}
+.bridesmaid-3 {background: url(../img/bridesmaid3.jpg) no-repeat center;}
+.bridesmaid-4 {background: url(../img/bridesmaid4.jpg) no-repeat center;}
+
+.bridesmaids-block {padding-bottom: 8rem;}
+
+
+
+
+.itinerary-section {
+	width: 100%;
+	background: url(../img/itinerary-bg.webp) no-repeat center;
+	background-attachment: fixed;
+	padding: 8rem 0;
+}
+
+.itinerary-heading {
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	color: #222;
+	letter-spacing: .1rem;
+	margin: 1.3rem 0;
+}
+
+.itinerary-cards {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 4rem 0;
+}
+
+.card-item {
+	width: 31%;
+	height: 34rem;
+}
+
+.card-item-heading {
+	width: 100%;
+	height: 6rem;
+	background: #F4F4F4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	color: #FA90F4;
+	letter-spacing: .1rem;
+}
+
+.card-item-content {
+	width: 100%;
+	height: 28rem;
+	padding: 2rem;
+	background: #11111199;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card-item-subheading {
+	font-family: century gothic;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	color: #fff; 
+}
+
+.light-text {
+	font-family: century gothic;
+	font-size: 1rem;
+	color: #BFC1BC;
+}
+
+.light-text a {border-bottom: 1px solid #BFC1BC;}
+
+
+.attending-section {padding: 8rem 0; position: relative;}
+
+.name-input {
+	width: 28rem;
+	height: 3rem;
+	margin: 2rem 0 0 0;
+	padding: 0 1rem;
+	border-style: none;
+	border-bottom: 1px solid #888;
+	font-family: century gothic;
+	font-size: 2rem;
+	color: #777;
+	text-align: center;
+}
+
+.attend-btn {
+	border-style: none;
+	background: #F68EF0;
+	font-family: century gothic;
+	font-size: 1.4rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1rem 4rem;
+	border-radius: 100px;
+	margin: 2rem 0 4rem 0;
+}
+
+.popup-block {
+	width: 60%;
+	height: 24rem;
+	padding: 5rem 2rem;
+	position: absolute;
+	top: 18%;
+	left: 20%;
+	background: #fff;
+	border: 8px dashed #555;
+	border-radius: 12px;
+	transition: all ease .3s;
+	display: none;
+}
+
+.popup-block h2 {
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-family: 'Playfair Display', serif;
+	color: #555;
+	margin: 1rem 0;
+}
+
+.popup-block p {
+	font-size: 1.4rem;
+	font-family: century gothic;
+	color: #666;
+}
+
+#close-btn {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 100px;
+	font-size: 1.2rem;
+	color: #777;
+	border: 1px solid #999;
+	background: #eee;
+	position: absolute;
+	top: -8%;
+	right: -3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*==== Media Queries ======================================*/
+@media (max-width: 1024px) {
+	.container {width: 90%;}
+	.header-content {
+		height: 50%;
+		padding: 30rem 0 2rem 0;
+	}
+	.popup-block {
+		width: 80%; 
+		height: 28rem;
+		left: 10%;
+	}
+}
+
+
+
+
+@media (max-width: 768px) {
+	.main-header {font-size: 5rem;}
+	.left-column {padding: 0 1rem 5rem 1rem;}
+	.left-column-header {padding: 0 0 3rem 1rem;}
+	.right-column {padding: 0 1rem 5rem 1rem;}
+	.right-column-header {padding: 0 1rem 3rem 0;}
+	.witness-photo {width: 10rem;height: 10rem;}
+	.card-item {width: 32%;}
+	.card-item-heading {font-size: 1.4rem;}
+	
+}
+
+
+
+
+
+
+@media (max-width: 479px) {
+
+	.header-content {
+		height: 100%;
+		padding: 6rem 0 2rem 0;
+		text-align: center;
+	}
+	.main-header {font-size: 4rem; line-height: 4rem;}
+	.secondary-header {font-size: 1.2rem;}
+	.introduction-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.left-column {width: 100%; text-align: center;}
+	.left-column-header {flex-direction: column;}
+	.right-column-header {flex-direction: column;}
+	.right-column {width: 100%; text-align: center;}
+	.img-block {order: 1;}
+	.heading-block {order: 2;}
+	.quote-text {
+		font-size: 1.6rem;
+		line-height: 2rem;
+	}
+	.witnesses-pictures {flex-direction: column;}
+	.witness-photo {
+		width: 12rem;
+		height: 12rem;
+		margin: 1rem auto;
+	}
+	.itinerary-cards {flex-direction: column; margin-bottom: 2rem;}
+	.card-item {width: 100%; margin-bottom: 2rem;}
+	.name-input {width: 100%;}
+	.popup-block {
+		width: 90%; 
+		height: 32rem;
+		left: 5%;
+	}
+}
+
+
+
+
+@media (max-width: 280px) {
+	.itinerary-heading {font-size: 1.8rem;}
+	.popup-block h2 {font-size: 1.6rem;}
+	.popup-block p {font-size: 1rem;}
+}
